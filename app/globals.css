@@ -87,3 +87,12 @@ body {
     background-position: 120px 120px;
   }
 }
+
+@keyframes neonFlow {
+  0% {
+    stroke-dashoffset: 260;
+  }
+  100% {
+    stroke-dashoffset: -260;
+  }
+}
