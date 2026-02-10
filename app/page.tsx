@@ -1,32 +1,23 @@
+/*
+  🧪 Page d'accueil temporaire
+  - Juste pour valider le layout, le header et le footer
+*/
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center bg-linear-to-b from-neutral-900 to-black text-white px-6">
-      <div className="max-w-2xl text-center">
-        <h1 className="text-5xl font-bold tracking-tight mb-4">
-          Maxime Gavinet
-        </h1>
-
-        <p className="text-lg text-neutral-300 mb-8">
-          Développeur Web & Futur Ingénieur — passionné par le design moderne,
-          les interfaces propres et l’apprentissage continu.
-        </p>
-
-        <div className="flex gap-4 justify-center">
-          <a
-            href="#projects"
-            className="px-6 py-3 rounded-md bg-white text-black font-medium hover:bg-neutral-200 transition"
-          >
-            Voir mes projets
-          </a>
-
-          <a
-            href="#contact"
-            className="px-6 py-3 rounded-md border border-neutral-700 hover:border-neutral-500 transition"
-          >
-            Me contacter
-          </a>
-        </div>
-      </div>
-    </main>
+    <section
+      id="hero"
+      className="min-h-[60vh] flex flex-col items-center justify-center text-center"
+    >
+      <p className="text-xs uppercase tracking-[0.3em] text-(--accent-soft) mb-3">
+        Portfolio en construction
+      </p>
+      <h1 className="text-4xl md:text-5xl font-semibold mb-4">
+        Construisons quelque chose de solide.
+      </h1>
+      <p className="text-sm md:text-base text-(--text-muted) max-w-xl">
+        Ce layout est la base de ton futur portfolio : propre, modulaire, tech,
+        prêt à accueillir tes sections (hero, projets, à propos, contact).
+      </p>
+    </section>
   );
 }
