@@ -1,14 +1,13 @@
 import Hero from "./components/sections/Hero";
 import Projects from "./components/sections/Projects";
+import About from "./components/sections/About";
 
 export default function Home() {
   return (
     <main className="relative">
       <Hero />
-
-      {/* Tu ajouteras les autres sections ici */}
-       <Projects />
-      {/* <About /> */}
+      <About />
+      <Projects />
       {/* <Contact /> */}
     </main>
   );
