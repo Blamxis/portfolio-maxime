@@ -46,7 +46,7 @@ public/
 ├── images/            # Images
 ├── CV.pdf             # CV téléchargeable
 └── favicon.svg        # Icône du site
-
+```
 
 ---
 
