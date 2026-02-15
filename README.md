@@ -32,19 +32,21 @@ Ce portfolio a été conçu pour :
 
 ## 📂 Structure du projet
 
+```bash
 app/
-|--components/  # Composants UI & Layout
-|    |-- layout/ # Footer & Header
-|    |-- sections/ # Sections du site
-|    |-- ui/ # Composant UI
-|--globals.css # Styles globaux
-|--layout.tsx # Layout Principal
-|--page.tsx # Page principale
+├── components/        # Composants UI & Layout
+│   ├── layout/        # Header & Footer
+│   ├── sections/      # Sections du site
+│   └── ui/            # Composants UI
+├── globals.css        # Styles globaux
+├── layout.tsx         # Layout principal
+└── page.tsx           # Page principale
 
 public/
-|--images/ # Images
-|--CV.pdf # CV Téléchargeable
-|--favicon.svg # Icon SVG
+├── images/            # Images
+├── CV.pdf             # CV téléchargeable
+└── favicon.svg        # Icône du site
+
 
 ---
 
