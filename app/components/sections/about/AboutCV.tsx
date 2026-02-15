@@ -356,7 +356,7 @@ export default function AboutCV() {
         </MobileSection>
 
         <a
-          href="/cv.pdf"
+          href="/CV-GAVINET-MAXIME-2026.pdf"
           download
           className="inline-block w-full text-center px-6 py-3 rounded-lg bg-(--accent) text-black font-semibold shadow-[0_0_15px_rgba(34,197,94,0.5)] hover:shadow-[0_0_25px_rgba(34,197,94,0.8)] transition-all"
         >
