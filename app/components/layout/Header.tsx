@@ -18,6 +18,13 @@ export default function Header() {
   const scrolled = useScrolled();
   const [open, setOpen] = useState(false);
 
+  const navItems = [
+    { label: "Accueil", id: "hero" },
+    { label: "À propos", id: "about" },
+    { label: "Projets", id: "projects" },
+    { label: "Contact", id: "contact" },
+  ];
+
   return (
     <header
       className={`
@@ -35,14 +42,14 @@ export default function Header() {
 
       <div className="container relative flex items-center justify-between py-4">
 
-        {/* Nouveau logo tech */}
+        {/* Logo */}
         <div className="flex items-center gap-3">
           <div className="
             relative h-10 w-10 bg-black/70 rounded-md border border-(--accent)
             shadow-[0_0_15px_rgba(34,197,94,0.35)]
             flex items-center justify-center
           ">
-            {/* Pins du microprocesseur */}
+            {/* Pins */}
             <span className="absolute -top-1 left-1/2 -translate-x-1/2 h-1 w-1 bg-(--accent) rounded-sm" />
             <span className="absolute -bottom-1 left-1/2 -translate-x-1/2 h-1 w-1 bg-(--accent) rounded-sm" />
             <span className="absolute top-1/2 -translate-y-1/2 -left-1 h-1 w-1 bg-(--accent) rounded-sm" />
@@ -51,7 +58,7 @@ export default function Header() {
             {/* Glow interne */}
             <div className="absolute inset-0 bg-(--accent)/10 blur-sm animate-pulse" />
 
-            {/* Initiales stylisées */}
+            {/* Initiales */}
             <span className="relative z-10 font-bold text-(--accent) tracking-wide">
               MG
             </span>
@@ -67,16 +74,16 @@ export default function Header() {
 
         {/* Navigation desktop */}
         <nav className="hidden md:flex items-center gap-8 text-sm">
-          {["Accueil", "Projets", "À propos", "Contact"].map((item) => (
+          {navItems.map((item) => (
             <a
-              key={item}
-              href={`#${item === "Accueil" ? "hero" : item.toLowerCase()}`}
+              key={item.id}
+              href={`#${item.id}`}
               className="
                 relative text-(--text-muted) transition-colors
                 hover:text-(--accent)
               "
             >
-              {item}
+              {item.label}
               <span className="
                 absolute left-0 -bottom-1 h-px w-0 bg-(--accent)
                 transition-all duration-300
@@ -144,17 +151,17 @@ export default function Header() {
         `}
       >
         <nav className="container flex flex-col py-3 text-sm">
-          {["Accueil", "Projets", "À propos", "Contact"].map((item) => (
+          {navItems.map((item) => (
             <a
-              key={item}
-              href={`#${item === "Accueil" ? "hero" : item.toLowerCase()}`}
+              key={item.id}
+              href={`#${item.id}`}
               onClick={() => setOpen(false)}
               className="
                 py-2 text-(--text-main) hover:text-(--accent)
                 transition-colors
               "
             >
-              {item}
+              {item.label}
             </a>
           ))}
         </nav>

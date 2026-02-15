@@ -4,8 +4,10 @@ import { Mail, Phone } from "lucide-react";
 
 export default function Contact() {
   return (
-    <div className="relative mt-32 mb-24 p-6 md:p-10 rounded-xl bg-black/60 border border-(--accent)/40 overflow-hidden animate-fadeInUp">
-
+    <section
+      id="contact"
+      className="relative mt-32 mb-24 p-6 md:p-10 rounded-xl bg-black/60 border border-(--accent)/40 overflow-hidden animate-fadeInUp"
+    >
       {/* Décorations */}
       <div className="absolute inset-0 pointer-events-none border-animation"></div>
       <div className="absolute inset-0 opacity-[0.07] bg-circuit-organic"></div>
@@ -23,8 +25,19 @@ export default function Contact() {
         Me contacter
       </h3>
 
-      {/* Texte d’intro */}
-      <p className="text-(--text-muted) text-lg leading-relaxed mb-12 max-w-3xl text-justify relative z-10">
+      {/* Texte d’intro — largeur corrigée */}
+      <p className="
+        text-(--text-muted)
+        text-lg
+        leading-relaxed
+        mb-12
+        max-w-xl
+        md:max-w-4xl
+        lg:max-w-none
+        text-justify
+        relative
+        z-10
+      ">
         Envie d’échanger, de discuter d’un projet ou simplement de prendre contact ?
         Voici mes coordonnées directes. Je réponds rapidement et avec plaisir.
       </p>
@@ -34,7 +47,7 @@ export default function Contact() {
 
         {/* Email */}
         <a
-          href="mailto:maxime.gavinet@gmail.com"
+          href="mailto:maxgvt26@icloud.com"
           className="group flex items-center gap-4 p-6 rounded-xl bg-black/40 border border-white/10 hover:border-(--accent)/40 hover:bg-black/60 transition-all duration-300 shadow-[0_0_0px_rgba(34,197,94,0.0)] hover:shadow-[0_0_20px_rgba(34,197,94,0.4)]"
         >
           <Mail className="w-8 h-8 text-(--accent) group-hover:scale-110 transition-transform duration-300" />
@@ -46,7 +59,7 @@ export default function Contact() {
 
         {/* Téléphone */}
         <a
-          href="tel:+33600000000"
+          href="tel:+33616683209"
           className="group flex items-center gap-4 p-6 rounded-xl bg-black/40 border border-white/10 hover:border-(--accent)/40 hover:bg-black/60 transition-all duration-300 shadow-[0_0_0px_rgba(34,197,94,0.0)] hover:shadow-[0_0_20px_rgba(34,197,94,0.4)]"
         >
           <Phone className="w-8 h-8 text-(--accent) group-hover:scale-110 transition-transform duration-300" />
@@ -57,6 +70,6 @@ export default function Contact() {
         </a>
 
       </div>
-    </div>
+    </section>
   );
 }
