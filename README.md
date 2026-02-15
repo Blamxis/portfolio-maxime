@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio — Maxime Gavinet
 
-## Getting Started
+Portfolio personnel développé avec Next.js et TailwindCSS.  
+Il présente mon parcours, mes compétences, mes projets et mes objectifs dans le domaine de l’informatique.
 
-First, run the development server:
+🔗 **Démo en ligne :** https://maxime-gavinet.vercel.app  
+📄 **CV :** Disponible dans la section dédiée du site  
+📬 **Contact :** maxgvt26@icloud.com
+
+---
+
+## 🎯 Objectif du projet
+
+Ce portfolio a été conçu pour :
+- présenter mon parcours de reconversion vers l’informatique,
+- mettre en avant mes compétences techniques,
+- valoriser mes projets personnels et professionnels,
+- servir de support à mes candidatures (BUT Informatique, stages, alternance).
+
+---
+
+## 🛠️ Stack technique
+
+- **Framework :** Next.js 16 (App Router)
+- **Frontend :** React 19
+- **Style :** TailwindCSS 4
+- **Icônes :** Heroicons, Lucide React
+- **Déploiement :** Vercel
+- **SEO :** Metadata Next.js (OpenGraph, Twitter Card, favicon, metadataBase)
+
+---
+
+## 📂 Structure du projet
+
+app/
+|--components/  # Composants UI & Layout
+|    |-- layout/ # Footer & Header
+|    |-- sections/ # Sections du site
+|    |-- ui/ # Composant UI
+|--globals.css # Styles globaux
+|--layout.tsx # Layout Principal
+|--page.tsx # Page principale
+
+public/
+|--images/ # Images
+|--CV.pdf # CV Téléchargeable
+|--favicon.svg # Icon SVG
+
+---
+
+## 🚀 Fonctionnalités
+
+- Design responsive (mobile, tablette, desktop)
+- Animations légères en CSS/Tailwind
+- Section projets avec pages dédiées
+- Section compétences claire et structurée
+- Téléchargement du CV
+- SEO complet (title, description, OG, Twitter Card)
+- Code organisé et composants réutilisables
+
+---
+
+## 📦 Installation & développement
 
 ```bash
+git clone https://github.com/ton-user/portfolio-maxime
+cd portfolio-maxime
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
