@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     siteName: "Portfolio Maxime Gavinet",
     images: [
       {
-        url: "/images/metaog.png",
+        url: "/images/metaog-v2.png",
         width: 1200,
         height: 630,
         alt: "Aperçu du portfolio de Maxime Gavinet",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     title: "Portfolio — Maxime Gavinet",
     description:
       "Portfolio de Maxime Gavinet, développeur web et futur ingénieur cybersécurité.",
-    images: ["/images/metaog.png"],
+    images: ["/images/metaog-v2.png"],
   },
   icons: {
     icon: "/favicon.svg",
