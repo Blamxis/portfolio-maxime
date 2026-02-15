@@ -1,1 +1,191 @@
 @import "tailwindcss";
+
+/* 🎨 Variables de thème global */
+:root {
+  --bg-main: #020617;        /* Fond principal très sombre (bleu nuit) */
+  --bg-elevated: #020617;    /* Surfaces légèrement élevées */
+  --accent: #22c55e;         /* Vert fluo "terminal" */
+  --accent-soft: #4ade80;    /* Variante plus douce */
+  --text-main: #e5e7eb;      /* Texte principal gris clair */
+  --text-muted: #9ca3af;     /* Texte secondaire */
+  --border-subtle: #1f2937;  /* Bordures discrètes */
+}
+
+/* 🌍 Style global du body */
+body {
+  @apply antialiased;
+  background: radial-gradient(circle at top, #0b1120 0, #020617 45%, #000 100%);
+  color: var(--text-main);
+}
+
+/* 🧱 Container global réutilisable */
+.container {
+  @apply mx-auto px-4;
+  max-width: 1120px;
+}
+
+/* ✨ Underline animé pour les liens */
+.link-underline {
+  position: relative;
+}
+
+.link-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 1px;
+  background: var(--accent);
+  transition: width 0.2s ease-out;
+}
+
+.link-underline:hover::after {
+  width: 100%;
+}
+
+/* 💡 Glow léger pour les éléments interactifs */
+.glow-soft {
+  box-shadow: 0 0 20px rgba(34, 197, 94, 0.15);
+}
+
+/* 🌌 Réseau de points animé derrière le header */
+.header-grid {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(34,197,94,0.25) 1px, transparent 1px);
+  background-size: 22px 22px;
+  opacity: 0.18;
+  animation: gridMove 18s linear infinite;
+}
+
+@keyframes gridMove {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100px 100px;
+  }
+}
+
+/* 🌌 Réseau de points animé derrière le header */
+.header-dots {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(34,197,94,0.35) 1px, transparent 1px);
+  background-size: 22px 22px;
+  opacity: 0.25;
+  animation: dotsMove 18s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes dotsMove {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 120px 120px;
+  }
+}
+
+@keyframes neonFlow {
+  0% {
+    stroke-dashoffset: 260;
+  }
+  100% {
+    stroke-dashoffset: -260;
+  }
+}
+
+/* Effet scan cyber */
+@layer utilities {
+  .card-scan {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card-scan::before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(
+      to bottom,
+      rgba(34, 197, 94, 0.15),
+      rgba(34, 197, 94, 0)
+    );
+    animation: scan 3s linear infinite;
+    pointer-events: none;
+    z-index: 5;
+  }
+}
+
+@keyframes scan {
+  0% {
+    top: -40px;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+.bg-circuit-organic {
+  background-image: url("/patterns/circuit-organic.svg");
+  background-size: 300px;
+  background-repeat: repeat;
+}
+
+.border-animation {
+  border: 1px solid rgba(34, 197, 94, 0.4);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+}
+
+.border-animation::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(34, 197, 94, 0.8);
+  border-radius: inherit;
+  animation: circuitFlow 6s linear infinite;
+  opacity: 0.6;
+}
+
+@keyframes circuitFlow {
+  0% {
+    clip-path: inset(0 100% 0 0);
+  }
+  50% {
+    clip-path: inset(0 0 0 0);
+  }
+  100% {
+    clip-path: inset(0 0 0 100%);
+  }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+
+@keyframes scanline {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}
+
+.animate-scanline {
+  animation: scanline 6s linear infinite;
+}
+
+
