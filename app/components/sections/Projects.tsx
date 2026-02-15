@@ -11,17 +11,19 @@ export default function Projects() {
       github: null, // code privé
       demo: "https://fresh-agency.fr/",
     },
+
     {
-      title: "Scanner de ports — Outil de cybersécurité",
+      title: "HACKTOOL 1.0 — Scanner de ports Python",
       description:
-        "Un scanner de ports simple en Python permettant d’analyser les ports ouverts d’une machine cible.",
-      tech: "Tech : Python, sockets, threading.",
-      status: "À venir",
-      statusColor: "gray",
-      tags: ["Python", "Réseau", "Cyber", "CLI"],
-      github: "#",
-      demo: "#",
+        "Un scanner de ports rapide et personnalisable permettant d’identifier les ports ouverts d’une machine cible, avec détection automatique des services et affichage coloré.",
+      tech: "Tech : Python, sockets, threading, colorama.",
+      status: "Terminé",
+      statusColor: "green",
+      tags: ["Python", "Réseau", "Cyber", "CLI", "TCP"],
+      github: "https://github.com/Blamxis/port-scanner-python",
+      demo: "https://github.com/Blamxis/port-scanner-python/releases/download/v1.0/demo.mp4",
     },
+
     {
       title: "Dashboard Terminal — Interface web interactive",
       description:
@@ -33,6 +35,7 @@ export default function Projects() {
       github: "#",
       demo: "#",
     },
+
     {
       title: "Cyber Tools — Mini‑suite d’outils web",
       description:
