@@ -25,6 +25,25 @@ export default function Projects() {
     },
 
     {
+      title: "CyberTools Suite — Suite d’outils cybersécurité",
+      description:
+        "Une application web moderne regroupant 6 outils de cybersécurité passifs : CyberScan, générateur de hash, encodeur/décodeur Base64, vérification IP, générateur de mots de passe et encodeur/décodeur d’URL. Full client-side, interface premium et performances optimisées.",
+      tech: "Tech : Next.js 15/16, TypeScript, TailwindCSS, crypto utils, App Router.",
+      status: "Terminé",
+      statusColor: "green",
+      tags: [
+        "Next.js",
+        "TypeScript",
+        "Cyber",
+        "Web Tools",
+        "Client-side",
+        "Security",
+      ],
+      github: "https://github.com/Blamxis/cybertools",
+      demo: "https://cybertools-v1.vercel.app/",
+    },
+
+    {
       title: "Dashboard Terminal — Interface web interactive",
       description:
         "Un tableau de bord web en style terminal simulant des commandes système (whoami, ping, ls...).",
@@ -32,18 +51,6 @@ export default function Projects() {
       status: "À venir",
       statusColor: "gray",
       tags: ["React", "Tailwind", "Frontend", "UI"],
-      github: "#",
-      demo: "#",
-    },
-
-    {
-      title: "Cyber Tools — Mini‑suite d’outils web",
-      description:
-        "Application web regroupant plusieurs outils utiles : générateur de hash, encodeur Base64, vérification IP, générateur de mots de passe.",
-      tech: "Tech : Next.js, API Routes, crypto utils.",
-      status: "À venir",
-      statusColor: "gray",
-      tags: ["Next.js", "API", "Cyber", "Web Tools"],
       github: "#",
       demo: "#",
     },
