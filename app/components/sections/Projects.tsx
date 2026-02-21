@@ -44,15 +44,24 @@ export default function Projects() {
     },
 
     {
-      title: "Dashboard Terminal — Interface web interactive",
+      title: "Dashboard Terminal — Interface web interactive cyber",
       description:
-        "Un tableau de bord web en style terminal simulant des commandes système (whoami, ping, ls...).",
-      tech: "Tech : React, TailwindCSS, animations CSS.",
-      status: "À venir",
-      statusColor: "gray",
-      tags: ["React", "Tailwind", "Frontend", "UI"],
-      github: "#",
-      demo: "#",
+        "Un terminal web immersif simulant un mini‑OS cyber : système de fichiers virtuel, commandes personnalisées, animations avancées (typing, glitch, matrix, loading), scan cyber, et architecture modulaire. Projet portfolio premium démontrant maîtrise de Next.js, React et TypeScript.",
+      tech: "Tech : Next.js 16, React, TypeScript, TailwindCSS, animations custom, App Router.",
+      status: "Terminé",
+      statusColor: "green",
+      tags: [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "TailwindCSS",
+        "Cyber",
+        "Terminal",
+        "Animations",
+        "Frontend",
+      ],
+      github: "https://github.com/Blamxis/dashboard-terminal",
+      demo: "https://dashboard-terminal-v1.vercel.app/",
     },
   ];
 
