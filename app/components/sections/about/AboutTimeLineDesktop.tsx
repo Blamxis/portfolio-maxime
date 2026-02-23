@@ -41,7 +41,7 @@ export default function AboutTimelineDesktop() {
   const progressIndex = isAtEnd ? totalSegments : adjusted * totalSegments * 1.05;
 
   return (
-    <div ref={containerRef} className="relative h-[200vh] mt-32 hidden md:block">
+    <div ref={containerRef} className="relative h-[200vh] mt-32 hidden lg:block">
       
       {/* Zone sticky plus grande */}
       <div className="sticky top-0 h-[35vh] flex flex-col items-center justify-start pt-20">

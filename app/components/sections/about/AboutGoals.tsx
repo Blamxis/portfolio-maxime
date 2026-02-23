@@ -74,48 +74,56 @@ export default function AboutGoal() {
           Objectifs
         </h3>
         <p className="text-(--accent-soft) text-lg mb-10">
-          Une vision claire, ambitieuse et structurée pour les années à venir.
+          Une progression structurée : consolider mes bases, viser l’excellence, construire une carrière solide.
         </p>
       </Section>
 
       {/* Texte principal */}
       <Section delay={150}>
-        <p className="text-(--text-muted) leading-relaxed text-lg md:text-xl text-justify max-w-4xl mb-12">
-          En tant que développeur Full‑Stack junior orienté backend, mon objectif est de
-          consolider mes bases techniques à travers le BUT Informatique, puis d’intégrer
-          l’Esisar afin de me spécialiser en ingénierie logicielle ou en cybersécurité.
-          Je souhaite évoluer dans des environnements exigeants, travailler sur des
-          systèmes critiques et contribuer à des projets à forte valeur technologique.
+        <p className="text-(--text-muted) leading-relaxed text-base md:text-lg text-justify max-w-4xl mb-12">
+          En tant que développeur Full‑Stack junior orienté backend, mon objectif prioritaire est 
+          d’intégrer le <strong>BUT Informatique de l’IUT de Valence</strong>. Cette formation représente 
+          pour moi une étape essentielle pour renforcer mes bases en algorithmique, systèmes, réseaux, 
+          bases de données et conception logicielle. 
+          <br /><br />
+          Une fois le BUT validé, je souhaite poursuivre vers l’<strong>Esisar</strong> afin de me spécialiser 
+          en ingénierie logicielle ou en cybersécurité. Mon ambition est d’évoluer dans des environnements 
+          exigeants, de travailler sur des systèmes critiques et de contribuer à des projets à forte valeur 
+          technologique.
         </p>
       </Section>
 
       {/* Liste d’objectifs animée */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 relative z-10">
 
+        {/* Objectif 1 : BUT Informatique */}
         <Section delay={250}>
           <div className="flex items-start gap-4 p-5 rounded-xl bg-black/40 border border-white/10 hover:border-(--accent)/40 hover:bg-black/60 transition-all duration-300">
             <Target className="w-8 h-8 text-(--accent) shrink-0" />
             <div>
-              <h4 className="text-white font-semibold text-lg mb-1">Renforcer mes bases</h4>
+              <h4 className="text-white font-semibold text-lg mb-1">Intégrer le BUT Informatique</h4>
               <p className="text-(--text-muted) text-sm leading-relaxed">
-                Approfondir l’algorithmique, les systèmes, les réseaux et les fondamentaux du développement.
+                Rejoindre l’IUT de Valence pour consolider mes fondamentaux : algorithmique, systèmes, réseaux,
+                bases de données et bonnes pratiques de développement.
               </p>
             </div>
           </div>
         </Section>
 
+        {/* Objectif 2 : Esisar */}
         <Section delay={350}>
           <div className="flex items-start gap-4 p-5 rounded-xl bg-black/40 border border-white/10 hover:border-(--accent)/40 hover:bg-black/60 transition-all duration-300">
             <Rocket className="w-8 h-8 text-(--accent) shrink-0" />
             <div>
-              <h4 className="text-white font-semibold text-lg mb-1">Intégrer l’Esisar</h4>
+              <h4 className="text-white font-semibold text-lg mb-1">Préparer l’entrée à l’Esisar</h4>
               <p className="text-(--text-muted) text-sm leading-relaxed">
-                Rejoindre une formation d’excellence pour monter en compétence sur des sujets avancés.
+                Viser une école d’ingénieurs exigeante après le BUT afin de monter en compétence sur des sujets avancés.
               </p>
             </div>
           </div>
         </Section>
 
+        {/* Objectif 3 : Spécialisation */}
         <Section delay={450}>
           <div className="flex items-start gap-4 p-5 rounded-xl bg-black/40 border border-white/10 hover:border-(--accent)/40 hover:bg-black/60 transition-all duration-300">
             <ShieldCheck className="w-8 h-8 text-(--accent) shrink-0" />
@@ -128,6 +136,7 @@ export default function AboutGoal() {
           </div>
         </Section>
 
+        {/* Objectif 4 : Projets ambitieux */}
         <Section delay={550}>
           <div className="flex items-start gap-4 p-5 rounded-xl bg-black/40 border border-white/10 hover:border-(--accent)/40 hover:bg-black/60 transition-all duration-300">
             <Code2 className="w-8 h-8 text-(--accent) shrink-0" />

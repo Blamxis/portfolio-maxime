@@ -122,7 +122,7 @@ export default function AboutCV() {
             Curriculum Vitae
           </h3>
           <p className="text-(--text-muted) mt-3 text-lg">
-            Développeur Full‑Stack junior — Profil professionnel, compétences, expériences et objectifs.
+            Développeur Full‑Stack junior — Profil professionnel, compétences, formations et expériences.
           </p>
         </header>
       </Section>
@@ -135,19 +135,23 @@ export default function AboutCV() {
         {/* COLONNE GAUCHE */}
         <div className="space-y-10 md:space-y-16 lg:col-span-1">
 
+          {/* PROFIL PROFESSIONNEL */}
           <Section delay={100}>
             <section className="space-y-4">
               <h4 className="text-xl font-semibold text-white border-b border-white/10 pb-2">
                 Profil professionnel
               </h4>
               <p className="text-(--text-muted) leading-relaxed text-justify">
-                Développeur Full‑Stack junior orienté backend. Je me débrouille bien avec React, Next.js,
-                Node.js, Sequelize et Prisma. J’ai également des bases en PHP et Python.  
-                Actuellement en transition vers un BUT Informatique afin de renforcer mes compétences fondamentales (algorithmique, systèmes, réseaux) et viser l’Esisar pour me spécialiser en ingénierie logicielle ou cybersécurité.
+                Développeur Full‑Stack junior spécialisé en JavaScript, avec une appétence pour le backend et les architectures logicielles. 
+                À l’aise avec React, Next.js, Node.js, Sequelize et Prisma, et disposant de bases solides en PHP et Python. 
+                Après plusieurs expériences professionnelles variées (gendarmerie, santé, commerce), j’ai développé une forte discipline, 
+                une grande adaptabilité et un sens aigu du travail en équipe. 
+                Aujourd’hui, je me concentre sur le développement web moderne et la montée en compétences continue.
               </p>
             </section>
           </Section>
 
+          {/* COMPÉTENCES TECHNIQUES */}
           <Section delay={200}>
             <section className="space-y-6">
               <h4 className="text-xl font-semibold text-white border-b border-white/10 pb-2">
@@ -201,7 +205,6 @@ export default function AboutCV() {
                   <ul className="text-(--text-muted) text-sm space-y-1">
                     <li>Débutant (en apprentissage)</li>
                     <li>Notions réseau (bases)</li>
-                    <li>Objectif : spécialisation Esisar</li>
                   </ul>
                 </div>
 
@@ -214,13 +217,53 @@ export default function AboutCV() {
         {/* COLONNE DROITE */}
         <div className="space-y-10 md:space-y-16 lg:col-span-2">
 
+          {/* FORMATIONS */}
           <Section delay={300}>
+            <section className="space-y-6">
+              <h4 className="text-xl font-semibold text-white border-b border-white/10 pb-2">
+                Formations
+              </h4>
+
+              <div className="space-y-6">
+
+                <div>
+                  <p className="text-white font-semibold text-lg">Seconde générale</p>
+                  <p className="text-(--accent-soft) text-sm">2013 – 2014 — Lycée Les Catalins</p>
+                </div>
+
+                <div>
+                  <p className="text-white font-semibold text-lg">Première STI2D</p>
+                  <p className="text-(--accent-soft) text-sm">2014 – 2015 — Lycée Les Catalins</p>
+                </div>
+
+                <div>
+                  <p className="text-white font-semibold text-lg">Terminale STI2D ITEC</p>
+                  <p className="text-(--accent-soft) text-sm">2015 – 2016 — Lycée Les Catalins</p>
+                </div>
+
+                <div>
+                  <p className="text-white font-semibold text-lg">Baccalauréat STI2D ITEC</p>
+                  <p className="text-(--accent-soft) text-sm">2016 — Lycée Les Catalins</p>
+                </div>
+
+                <div>
+                  <p className="text-white font-semibold text-lg">Titre RNCP Développeur Web & Web Mobile</p>
+                  <p className="text-(--accent-soft) text-sm">2023 – 2024 — STUDI</p>
+                </div>
+
+              </div>
+            </section>
+          </Section>
+
+          {/* EXPÉRIENCES PRO */}
+          <Section delay={400}>
             <section className="space-y-6">
               <h4 className="text-xl font-semibold text-white border-b border-white/10 pb-2">
                 Expériences professionnelles
               </h4>
 
               <div className="space-y-8">
+
                 <div>
                   <p className="text-white font-semibold text-lg">Gendarmerie Nationale</p>
                   <p className="text-(--accent-soft) text-sm">2017 – 2019</p>
@@ -230,10 +273,18 @@ export default function AboutCV() {
                 </div>
 
                 <div>
-                  <p className="text-white font-semibold text-lg">Travail Alimentaire</p>
+                  <p className="text-white font-semibold text-lg">Technicien de santé — Orkyn</p>
+                  <p className="text-(--accent-soft) text-sm">Juin 2019 – Octobre 2019</p>
+                  <p className="text-(--text-muted) text-sm mt-2 leading-relaxed">
+                    Installation de matériel médical, accompagnement patient, rigueur et autonomie.
+                  </p>
+                </div>
+
+                <div>
+                  <p className="text-white font-semibold text-lg">Travail alimentaire</p>
                   <p className="text-(--accent-soft) text-sm">2019 – 2020</p>
                   <p className="text-(--text-muted) text-sm mt-2 leading-relaxed">
-                    Rigueur, cadence, respect des normes, adaptation à un environnement exigeant.
+                    Cadence, respect des normes, adaptation à un environnement exigeant.
                   </p>
                 </div>
 
@@ -244,47 +295,25 @@ export default function AboutCV() {
                     Relation client, communication, polyvalence, gestion de caisse.
                   </p>
                 </div>
+
               </div>
             </section>
           </Section>
 
-          <Section delay={400}>
-            <section className="space-y-6">
-              <h4 className="text-xl font-semibold text-white border-b border-white/10 pb-2">
-                Formations
-              </h4>
-
-              <div className="space-y-6">
-                <div>
-                  <p className="text-white font-semibold text-lg">Bac STI2D ITEC</p>
-                  <p className="text-(--accent-soft) text-sm">Lycée Les Catalins — 2016</p>
-                </div>
-
-                <div>
-                  <p className="text-white font-semibold text-lg">Titre RNCP Développeur Web & Web Mobile</p>
-                  <p className="text-(--accent-soft) text-sm">STUDI — 2024</p>
-                </div>
-
-                <div>
-                  <p className="text-white font-semibold text-lg">BUT Informatique (en cours)</p>
-                  <p className="text-(--accent-soft) text-sm">IUT Valence — 2026</p>
-                </div>
-              </div>
-            </section>
-          </Section>
-
+          {/* OBJECTIF PROFESSIONNEL */}
           <Section delay={500}>
             <section className="space-y-4">
               <h4 className="text-xl font-semibold text-white border-b border-white/10 pb-2">
                 Objectif professionnel
               </h4>
               <p className="text-(--text-muted) leading-relaxed text-justify">
-                Développeur junior motivé, je souhaite intégrer l’Esisar pour progresser en cybersécurité
-                ou en ingénierie logicielle et travailler sur des systèmes critiques et sécurisés.
+                Développeur junior motivé, je souhaite continuer à progresser en cybersécurité 
+                et en ingénierie logicielle afin de travailler sur des systèmes fiables, performants et sécurisés.
               </p>
             </section>
           </Section>
 
+          {/* BOUTON CV */}
           <Section delay={600}>
             <div className="pt-4">
               <a
@@ -301,15 +330,15 @@ export default function AboutCV() {
       </div>
 
       {/* ----------------------------------------------------------
-         VERSION MOBILE (cartes compactes + accordéons)
+         VERSION MOBILE
       ---------------------------------------------------------- */}
       <div className="block md:hidden space-y-6 relative z-10">
 
         <MobileSection title="Profil professionnel">
           <p>
-            Développeur Full‑Stack junior orienté backend. Je me débrouille bien avec React, Next.js,
-            Node.js, Sequelize et Prisma. Bases en PHP et Python. En transition vers un BUT Info pour
-            viser l’Esisar.
+            Développeur Full‑Stack junior orienté backend. À l’aise avec React, Next.js,
+            Node.js, Sequelize et Prisma. Expériences variées (gendarmerie, santé, commerce)
+            renforçant discipline et adaptabilité.
           </p>
         </MobileSection>
 
@@ -319,7 +348,17 @@ export default function AboutCV() {
             <li><strong>Backend :</strong> Node.js, Express, Sequelize, Prisma</li>
             <li><strong>Modélisation :</strong> Merise, Factory, Singleton</li>
             <li><strong>Outils :</strong> Git, GitHub, Figma</li>
-            <li><strong>Cybersécurité :</strong> Débutant (objectif Esisar)</li>
+            <li><strong>Cybersécurité :</strong> Débutant</li>
+          </ul>
+        </MobileSection>
+
+        <MobileSection title="Formations">
+          <ul className="space-y-3">
+            <li><strong>Seconde générale</strong> — 2013–2014</li>
+            <li><strong>Première STI2D</strong> — 2014–2015</li>
+            <li><strong>Terminale STI2D ITEC</strong> — 2015–2016</li>
+            <li><strong>Baccalauréat STI2D ITEC</strong> — 2016</li>
+            <li><strong>RNCP DWWM</strong> — 2023–2024</li>
           </ul>
         </MobileSection>
 
@@ -328,6 +367,10 @@ export default function AboutCV() {
             <li>
               <strong>Gendarmerie (2017–2019)</strong><br />
               Discipline, gestion de situations complexes, travail d’équipe.
+            </li>
+            <li>
+              <strong>Technicien de santé — Orkyn (juin–octobre 2019)</strong><br />
+              Installation de matériel médical, accompagnement patient.
             </li>
             <li>
               <strong>Travail alimentaire (2019–2020)</strong><br />
@@ -340,18 +383,10 @@ export default function AboutCV() {
           </ul>
         </MobileSection>
 
-        <MobileSection title="Formations">
-          <ul className="space-y-3">
-            <li><strong>Bac STI2D ITEC</strong> — 2016</li>
-            <li><strong>RNCP DWWM</strong> — 2024</li>
-            <li><strong>BUT Informatique (en cours)</strong> — 2026</li>
-          </ul>
-        </MobileSection>
-
         <MobileSection title="Objectif professionnel">
           <p>
-            Développeur junior motivé, je souhaite intégrer l’Esisar pour progresser en cybersécurité
-            ou ingénierie logicielle et travailler sur des systèmes critiques et sécurisés.
+            Développeur junior motivé, je souhaite progresser en cybersécurité
+            et ingénierie logicielle pour travailler sur des systèmes fiables et sécurisés.
           </p>
         </MobileSection>
 
