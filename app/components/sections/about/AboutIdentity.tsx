@@ -24,7 +24,7 @@ export default function AboutIdentity() {
         {/* Photo */}
         <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden shadow-[0_0_25px_rgba(34,197,94,0.5)] shrink-0">
           <Image
-            src="/images/pdp.png"
+            src="/images/pdp.jpg"
             alt="Photo de Maxime"
             fill
             sizes="200px"
